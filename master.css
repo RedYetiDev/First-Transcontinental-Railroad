@@ -53,12 +53,12 @@ body, html {
 }
 
 .bgimg-2 {
-  background-image: url("img_parallax2.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/East_west_shaking_hands_by_russell.jpg/1920px-East_west_shaking_hands_by_russell.jpg");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("img_parallax3.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/65/44._Cape_Horn%2C_C.P.R.R.jpg");
   min-height: 400px;
 }
 
