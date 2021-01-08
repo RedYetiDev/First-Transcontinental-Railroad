@@ -1,0 +1,2 @@
+// Scroll //
+AOS.init();
