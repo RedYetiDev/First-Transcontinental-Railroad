@@ -1,47 +1,21 @@
-window.addEventListener('scroll', function() {
-  console.log("Scrollin'");
+var frameNumber = 0, // start video at frame 0
+    // lower numbers = faster playback
+    playbackConst = 1000, // Set to 1000 to make the playback slower
+    // get page height from video duration
+    setHeight = document.getElementById("set-height"),
+    // select video element
+    vid = document.getElementById('v0');
+
+// dynamically set the page height according to video length
+vid.addEventListener('loadedmetadata', function () {
+    setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
 });
-var scroll = window.requestAnimationFrame ||
-            function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow = document.querySelectorAll('.show-on-scroll');
-function loop() {
 
-  elementsToShow.forEach(function (element) {
-    if (isElementInViewport(element)) {
-      element.classList.add('is-visible');
-    } else {
-      element.classList.remove('is-visible');
-    }
-  });
-
-  scroll(loop);
+// Use requestAnimationFrame for smooth playback
+function scrollPlay() {
+    var frameNumber = window.pageYOffset / playbackConst;
+    vid.currentTime = frameNumber;
+    window.requestAnimationFrame(scrollPlay);
 }
-loop();
-function isElementInViewport(el) {
-  if (typeof jQuery === "function" && el instanceof jQuery) {
-    el = el[0];
-  }
-  var rect = el.getBoundingClientRect();
-  return (
-    (rect.top <= 0
-      && rect.bottom >= 0)
-    ||
-    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-    ||
-    (rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-  );
-}
-const callback = function(entries) {
-  entries.forEach(entry => {
-    entry.target.classList.toggle("is-visible");
-  });
-};
 
-const observer = new IntersectionObserver(callback);
-
-const targets = document.querySelectorAll(".show-on-scroll");
-targets.forEach(function(target) {
-  observer.observe(target);
-});
+window.requestAnimationFrame(scrollPlay);
