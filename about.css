@@ -1,3 +1,7 @@
 body {
   background-color: lightblue;
 }
+.center_video {
+  margin: 0 auto;
+  width: 400px;
+}
