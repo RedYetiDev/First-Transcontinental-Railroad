@@ -19,3 +19,9 @@ function scrollPlay() {
 }
 
 window.requestAnimationFrame(scrollPlay);
+enterView({
+    selector: "section",
+    enter: function (el) {
+        el.classList.add("entered");
+    }
+});
