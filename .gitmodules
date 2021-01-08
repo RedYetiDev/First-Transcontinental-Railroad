@@ -1,0 +1,3 @@
+[submodule "modules/ScrollMagic"]
+	path = modules/ScrollMagic
+	url = https://github.com/janpaepke/ScrollMagic
