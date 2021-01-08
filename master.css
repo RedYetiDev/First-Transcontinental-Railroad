@@ -1,4 +1,7 @@
-.HomeButton .Settings{
+.HomeButton {
+  filter: invert(1);
+}
+.Settings {
   filter: invert(1);
 }
 
