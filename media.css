@@ -7,6 +7,15 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.text-block2 {
+  left: 50px;
+  text-align: center;
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .fadetext {
   position: absolute;
@@ -102,6 +111,10 @@
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.films {
+  text-align: center;
 }
 
 @-webkit-keyframes fade {
