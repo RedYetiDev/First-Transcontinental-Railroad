@@ -57,6 +57,15 @@ body, html {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Dale_Creek_Bridge_Union_Pacific_Railroad_Company_by_Andrew_J_Russell.jpg");
   min-height: 100%;
 }
+footer {
+  background-color: #333;
+  min-height: 10px;
+  color: white;
+  text-align: center;
+}
+footer a {
+  color: white;
+}
 
 .bgimg-2 {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/East_west_shaking_hands_by_russell.jpg/1920px-East_west_shaking_hands_by_russell.jpg");
