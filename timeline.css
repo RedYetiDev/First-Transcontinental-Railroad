@@ -47,17 +47,15 @@ body {
   border-radius: 50%;
   z-index: 1;
 }
-
 /* Place the container to the left */
 .left {
-  left: 0;
+  left: -60%;
+  opacity: 0;
 }
-
-/* Place the container to the right */
 .right {
-  left: 50%;
+  right: -110%;
+  opacity: 0;
 }
-
 /* Add arrows to the left container (pointing right) */
 .left::before {
   content: " ";
