@@ -4,6 +4,7 @@ window.onload = function() {
   g1 = document.getElementById("game1")
   g2 = document.getElementById("game2")
   games = document.getElementsByClassName("games")[0]
+  $('#game1:contains("test")').css('background-color', 'red');
   window.onresize = function() {
     if (window.innerWidth < 875 & games.style.display != "none") {
       console.log("RESIZE")
