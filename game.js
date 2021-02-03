@@ -14,20 +14,20 @@ window.onload = function() {
       $(".games").fadeIn()
     }
   }
-  if (document.cookie.match("dontshow=true")) {
+  if (!document.cookie.match("dontshow=true")) {
       modal.style.display = "block"
 }
   span.onclick = function() {
     modal.style.display = "none";
     if (document.getElementById("dontshow").checked) {
-      document.cookie = "dontshow=true; max-age=604800;"
+      document.cookie += "dontshow=true;"
     }
   }
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
       if (document.getElementById("dontshow").checked) {
-        document.cookie = "dontshow=true; max-age=604800;"
+        document.cookie += "dontshow=true;"
       }
     }
   }
