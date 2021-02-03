@@ -7,11 +7,11 @@ window.onload = function() {
   window.onresize = function() {
     if (window.innerWidth < 875 & games.style.display != "none") {
       console.log("RESIZE")
-      games.style.display = "none"
+      $(".games").fadeOut()
     }
     else if (window.innerWidth > 874 & games.style.display == "none") {
       console.log("RESIZE (2)")
-      games.style.display = "initial"
+      $(".games").fadeIn()
     }
   }
 
