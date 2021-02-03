@@ -14,18 +14,27 @@ window.onload = function() {
       $(".games").fadeIn()
     }
   }
-
-  modal.style.display = "block";
+  if (document.cookie.match("dontshow=true")) {
+      modal.style.display = "block"
+}
   span.onclick = function() {
     modal.style.display = "none";
+    if (document.getElementById("dontshow").checked) {
+      document.cookie = "dontshow=true; max-age=604800;"
+    }
   }
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      if (document.getElementById("dontshow").checked) {
+        document.cookie = "dontshow=true; max-age=604800;"
+      }
     }
   }
-  g1.onwebkitfullscreenchange = function() {g1.src = g1.src}
-  g2.onwebkitfullscreenchange = function() {g2.src = g2.src}
+  if (g1.onwebkitfullscreenchange) {
+    g1.onwebkitfullscreenchange = function() {g1.src = g1.src}
+    g2.onwebkitfullscreenchange = function() {g2.src = g2.src}
+}
 }
 function full(elem) {
   if (elem.requestFullscreen) {
