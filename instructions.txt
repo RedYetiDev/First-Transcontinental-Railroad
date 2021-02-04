@@ -1,3 +1,4 @@
+You found the instructions!
 Game 1:
   Your goal is to avoid the trees while picking up passengers.
   Use the "left" and "right" arrow keys to move around.
