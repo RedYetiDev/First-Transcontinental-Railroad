@@ -1,0 +1,10 @@
+Game 1:
+  Your goal is to avoid the trees while picking up passengers.
+  Use the "left" and "right" arrow keys to move around.
+Game 2:
+  Your goal to help build the Transcontinental Railroad.
+  Use the space bar to fire a nail, then wait 2 seconds before you can fire a new one.
+  If you hit the hole, you get a point, and the game speeds up.
+  If you don't hit a hole in 10 seconds, you lose.
+  Each time you hit the hole, the timer starts over
+Return to games ==> https://redyetidev.github.io/First-Transcontinental-Railroad/game.html

@@ -4,6 +4,11 @@
 .Settings {
   filter: invert(1);
 }
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 ul {
   position: fixed;
