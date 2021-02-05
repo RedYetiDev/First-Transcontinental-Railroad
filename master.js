@@ -5,7 +5,7 @@ function changecursor(e) {
 
 window.onload = function() {
   document.body.addEventListener("keyup", function(event) {
-      if (event.keyCode == 9) {
+      if (event.keyCode == 16) {
         changecursor()
       }
   })
