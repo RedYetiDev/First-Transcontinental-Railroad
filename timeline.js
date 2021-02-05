@@ -1,4 +1,11 @@
 window.onload = function() {
+  timeline = document.getElementsByClassName("timeline")[0]
+  if (window.innerWidth < 605 & timeline.style.display != "none") {
+    $(".timeline").fadeOut()
+  }
+  else if (window.innerWidth > 604 & timeline.style.display == "none") {
+    $(".timeline").fadeIn()
+  }
   gsap.registerPlugin(ScrollTrigger);
   const leftboxes = document.querySelectorAll('.left');
 
@@ -7,7 +14,6 @@ window.onload = function() {
       scrollTrigger: {
         trigger: leftboxes,
         toggleActions: "restart reset restart reset",
-        markers: true,
       },
       start: "center center",
       left: 0,
@@ -22,11 +28,19 @@ window.onload = function() {
       scrollTrigger: {
         trigger: rightboxes,
         toggleActions: "restart reset restart reset",
-        markers: true,
       },
       start: "center center",
       left: "50%",
       opacity: "100%"
     });
   });
+}
+window.onresize = function() {
+  timeline = document.getElementsByClassName("timeline")[0]
+  if (window.innerWidth < 605 & timeline.style.display != "none") {
+    $(".timeline").fadeOut()
+  }
+  else if (window.innerWidth > 604 & timeline.style.display == "none") {
+    $(".timeline").fadeIn()
+  }
 }
