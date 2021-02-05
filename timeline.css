@@ -129,3 +129,29 @@ body {
   left: 0%;
   }
 }
+ul.sidebar {
+  z-index: 10;
+  width: 150px;
+  background-color: #555;
+  position: fixed;
+  text-align: center;
+}
+
+ul.sidebar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.sidebar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+ul.switchnav {
+    font-size: 25;
+}

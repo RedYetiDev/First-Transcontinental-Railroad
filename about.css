@@ -25,3 +25,31 @@ body {
   width: 100%;
   padding: 20px;
 }
+ul.sidebar {
+  z-index: 10;
+  width: 100px;
+  background-color: #555;
+  position: fixed;
+  text-align: center;
+}
+
+ul.sidebar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.sidebar a:hover {
+  background-color: #000;
+}
+ul.switchnav {
+    font-size: 25;
+}
+.active {
+  background-color: #4CAF50;
+}
+ul.switchnav {
+    font-size: 25;
+}

@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-ul {
+ul.topbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -22,11 +22,11 @@ ul {
   background-color: #333;
 }
 
-li :not(#icon){
+ul.topbar li :not(#icon) {
   float: left;
 }
 
-li a {
+ul.topbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -105,9 +105,36 @@ h3 {
   font: 20px "Lato", sans-serif;
   color: #111;
 }
-li #icon {
+ul.topbar li #icon {
   float: right;
 }
+ul.sidebar {
+  z-index: 10;
+  width: 90px;
+  background-color: #555;
+  position: fixed;
+  text-align: center;
+}
+
+ul.sidebar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.sidebar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+ul.switchnav {
+    font-size: 25;
+}
+
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
