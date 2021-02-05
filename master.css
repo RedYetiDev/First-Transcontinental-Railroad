@@ -134,7 +134,9 @@ ul.sidebar a:hover {
 ul.switchnav {
     font-size: 25;
 }
-
+.catcurser {
+  cursor: url("https://downloads.totallyfreecursors.com/thumbnails/cat22.gif"), alias;
+}
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
