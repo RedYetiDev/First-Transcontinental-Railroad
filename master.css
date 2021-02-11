@@ -108,6 +108,10 @@ h3 {
 ul.topbar li #icon {
   float: right;
 }
+[onclick="window.open('https://redyetidev.github.io')"] {
+  cursor: pointer;
+}
+
 ul.sidebar {
   z-index: 10;
   width: 90px;
