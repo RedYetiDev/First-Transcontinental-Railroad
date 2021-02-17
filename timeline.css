@@ -148,7 +148,11 @@ ul.sidebar a {
 ul.sidebar a:hover {
   background-color: #000;
 }
-
+.topbar .menucon {
+  display: inline-block;
+  cursor: pointer;
+  width: 60px;
+}
 .active {
   background-color: #4CAF50;
 }

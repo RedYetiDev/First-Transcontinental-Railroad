@@ -17,6 +17,9 @@ function switchnav() {
   }
 }
 function hidemenu(self) {
+  if (document.querySelector("ul").className == "sidebar") {
+    document.querySelector("ul").className = "topbar"
+  }
   if (self.classList.contains('change')) {
     self.parentElement.parentElement.children.forEach(function(element) {
       if (!element.children[0].classList.contains("menucon")) {
